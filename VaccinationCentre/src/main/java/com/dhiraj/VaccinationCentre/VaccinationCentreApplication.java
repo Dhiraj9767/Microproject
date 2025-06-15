@@ -2,12 +2,18 @@ package com.dhiraj.VaccinationCentre;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
+import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication
 public class VaccinationCentreApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(VaccinationCentreApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(VaccinationCentreApplication.class, args);
+    }
 
+    @Bean
+    RestTemplate restTemplate() {
+        return new RestTemplate();
+    }
 }
