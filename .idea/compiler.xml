@@ -9,7 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="EurekaServers" />
       </profile>
-      <profile name="Annotation profile for CitizenService" enabled="true">
+      <profile name="Annotation profile for VaccinationCentre" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
@@ -17,11 +17,9 @@
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.38/lombok-1.18.38.jar" />
         </processorPath>
         <module name="CitizenService" />
+        <module name="VaccinationCentre" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="VaccinationCentre" target="17" />
-    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
